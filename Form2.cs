@@ -24,8 +24,8 @@ namespace CookieClicker
             {
                 Form1.PW -= Form1.NeedPointToUpgClick;
                 Form1.Addpoint += 1;
-                Form1.NeedPointToUpgClick += 1;
-                Form1.NeedPointToUpgClick *= 2;
+                Form1.NeedPointToUpgClick += Form1.NeedPointToUpgClick++ *2;
+                //Form1.NeedPointToUpgClick *= 2;
                 label1.Text = Form1.NeedPointToUpgClick.ToString();
                 All_Point.Text = Form1.AllPW.ToString();
                 Point.Text = Form1.PW.ToString();
